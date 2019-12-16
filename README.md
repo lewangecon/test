@@ -6,6 +6,7 @@
 3. Atom
 
 4. Steps to Use Git and Github
+  
   1. Register a GitHub account
   2. [Download Git for Windows:](https://happygitwithr.com/install-git.html#install-git-windows)
   3. Configure Git:
