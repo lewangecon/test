@@ -22,6 +22,10 @@ Here we list the things needed for data science
 
   - [Connect to Github:](https://happygitwithr.com/push-pull-github.html#push-pull-github)
   
+### Step 2. Create, modify, and update a Project
+
+1. [Basics](https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners)
+  
 ### Step 3. Donwload (Fork) others' work and Contribute (Pull Request) to them 
 
 1. [Fork a Repo](https://help.github.com/en/github/getting-started-with-github/fork-a-repo#fork-an-example-repository)
