@@ -25,6 +25,15 @@ Here we list the things needed for data science
 ### Step 2. Create, modify, and update a Project
 
 1. [Basics](https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners)
+
+2. [.gitignore](https://www.atlassian.com/git/tutorials/saving-changes/gitignore): Imagine that you have a very large raw dataset that you do not make changes to nor want to share with others.
+
+```
+# exclude everything except directory foo/bar
+
+    !/foo/bar
+
+```
   
 ### Step 3. Donwload (Fork) others' work and Contribute (Pull Request) to them 
 
