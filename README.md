@@ -1,5 +1,6 @@
 # Things to install
 
+Here we list the things needed for data science
 
 1. Download R and Rstudio
 2. Mathpix
@@ -18,5 +19,6 @@
   ```
 
   - [Connect to Github:](https://happygitwithr.com/push-pull-github.html#push-pull-github)
+
 
 
