@@ -13,8 +13,8 @@
 
 ```
 git config --global user.name 'Jane Doe'
-b.	git config --global user.email 'jane@example.com'
-c.	git config --global -list
+git config --global user.email 'jane@example.com'
+git config --global -list
 ```
 
 - [Connect to Github:](https://happygitwithr.com/push-pull-github.html#push-pull-github)
