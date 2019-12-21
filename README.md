@@ -62,7 +62,7 @@ git status
 
 # Use Atom to open the file with merge conflicts and identify where the conflicts exist.
 # Resolve the conflicts first. and save the file.
-# then business as usual. 
+# then business as usual.
 ```
 
 ### Step 4. Collaborate with others: Donwload (Fork) others' work and Contribute (Pull Request) to them
@@ -76,4 +76,4 @@ git status
 
 3. [Create a Pull Request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork)
 
-4. [Owner to Review a Pull Request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/reviewing-proposed-changes-in-a-pull-request)
+4. [Owner to Review a Pull Request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/reviewing-proposed-changes-in-a-pull-request): Go to **Pull Requests**, examine **File changed**
