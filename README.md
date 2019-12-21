@@ -28,12 +28,18 @@ Here we list the things needed for data science
 
 2. [.gitignore](https://www.atlassian.com/git/tutorials/saving-changes/gitignore): Imagine that you have a very large raw dataset that you do not make changes to nor want to share with others.
 
+
 ```
 # exclude everything except directory foo/bar
 
     !/foo/bar
 
 ```
+
+3. [How to find .gitignore in your system](https://stackoverflow.com/questions/11197249/show-system-files-show-git-ignore-in-osx)
+
+4. [How to kill a push process](https://stackoverflow.com/questions/11729077/git-stop-git-push)
+
   
 ### Step 3. Donwload (Fork) others' work and Contribute (Pull Request) to them 
 
