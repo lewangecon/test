@@ -1,4 +1,5 @@
 library(tidyverse)
+library(HonestDiD)
 
 set.seed(123456)
 
@@ -47,8 +48,8 @@ set.seed(123456)
                )
 
 # Below is the code snippet from the paper
-numPrePeriods = length(data_college$prePeriodIndices)
-numPostPeriods = length(data_college$postPeriodIndices)
+numPrePeriods = length(data$prePeriodIndices)
+numPostPeriods = length(data$postPeriodIndices)
 
 l_vec = basisVector(1, numPostPeriods)
 
