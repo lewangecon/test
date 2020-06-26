@@ -1,0 +1,115 @@
+---
+title: "Notes on Mobility"
+author: "Le Wang"
+date: "`r Sys.Date()`"
+output: 
+  beamer_presentation:
+    incremental: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Methods
+
+1. Regression-based approach: Intergenerational Mobility elasticity (IGE)
+2. Rank-based approach
+    + Rank-rank slope
+    + "directional" rank mobility
+
+---
+**What do they measure?**
+
+1. **IGE:** the concept of regression to mean
+2. **rank-rank slope** the concept of positional mobility
+
+---
+**How are they related?**
+
+People claim that the rank-rank slope is closely related to the intergenerational correlation (IGC) in log income. **I AM NOT SURE ABOUT THIS APPROXIMATION**
+
+$$
+IGE = IGC \cdot \frac{\sigma_{y_1}}{\sigma_{y_0}}
+$$
+where $\sigma_{y_1}, \sigma_{y_0}$ are the variance (or inequality) of the income distribution for the child and parental generations, respectively.
+
+
+
+---
+
++ Positional mobility
++ Can be used for group comparison with respect to the **national distribution**. 
+
+## Alternative approaches
+
+IV
+1. exclusion restriction (father's education) may fail to hold. But it can serve as an upper bound (since it may have an independent, positive effect). Using NLSY, Mazumder finds that father's education has no effect on child's earnings once family income is averaged over 3 or 4 years (a similar result is also found in Corcoran et al. 1992).
+
+2. It may bias downward if someone uses sons under age 40 and fathers over age 40. As Haider and Solon (2004) show that in the presence of nonclassical measurement error, the probability limit of IGE using IV is 
+
+$$
+\lambda_1/\lambda_0 \cdot \beta
+$$
+$\lambda_1, \lambda_0$ are the non-classicial measurement error coefficient for child and father, respectively. Haider and Solon show that $\lambda <1$ for those under age 40 and $\lambda>1$ for those above age 40. 
+
+## Measurements
+
+Permanent income
+
+1. Single year of income: very low, about .2
+2. Five year average of income: .4 or higher in labor market earnings (Solon 1992)
+3. longer time average of income (up to 16 years): around .6 Mazumder (2005a)
+
+a 5-year average is insufficient is that the transitory variance in earnings tends to be highly persistent. **HOW WILL THIS BIAS THE RESULTS**
+
+---
+
+Data
+
+The age at which father's earnings measured. The errors may vary with age. If the variance of the transitory component of earnings changes considerably over the course of the life cycle, then short-term averags of earnings taken at a time when earnings are noisy may lead to further bias. 
+
+## Data
+
+Mazumder PNAS: The PSID has been invaluable to this literature because it is 
+
+1. integerenational following family members as they form new housholds;
+2. longitudinal, following individuals over many years and covering broad swaths of the life cycle
+3. very rich, collecting detailed information on socioeconomic status, including information on income, occupation, education, health, and family structure
+4. long-running- the PSID is now 50 years old. 
+
+Because of these advantages, we can overcome many of the challenges to have better measurements
+
+
+
+---
+
+This code replicates Figure (1) in Mazumder ReStat
+```{r}
+library(ggplot2)
+library(tidyverse)
+delta <- .5
+share <- .5
+
+data <- tibble(
+          x = c(1:70)
+        )
+
+lambda <- function(x, share, delta){
+              alpha <- 1 + 2*delta*(x-(1-delta^x)/(1-delta))/(x*(1-delta))
+              return(share/(share + 1/x*alpha*(1-share)))
+          } 
+  
+  
+
+ggplot(data = data, aes(x = x)) +
+  stat_function(fun = lambda, args = c(.5,.5)) +
+  stat_function(fun = lambda, args = c(.3,.5)) + 
+  stat_function(fun = lambda, args = c(.2,.5))
+
+
+```
+
+
+
+

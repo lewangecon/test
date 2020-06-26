@@ -77,3 +77,6 @@ git status
 3. [Create a Pull Request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork)
 
 4. [Owner to Review a Pull Request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/reviewing-proposed-changes-in-a-pull-request): Go to **Pull Requests**, examine **File changed**
+
+  + Action 1: Approve the file, merge with
+  + Action 2: Comment on the file, and request for changes
