@@ -11,7 +11,7 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-## Methods
+## A summar of Methods
 
 1. Regression-based approach: Intergenerational Mobility elasticity (IGE)
 2. Rank-based approach
